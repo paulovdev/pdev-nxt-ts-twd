@@ -9,8 +9,22 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        p: "var(--p)",
+        p2: "var(--p-2)",
+        p3: "var(--p-3)",
+        bg: "var(--bg)",
+        bg2: "var(--bg-2)",
+        bg2h: "var(--bg-2-hover)",
+        bg3: "var(--bg-3)",
+        bgn: "var(--bg-nav)",
+        bL: "var(--bg-linear)",
+        border: "var(--border)",
+      },
+      screens: {
+        'mobile': '325px',
+        'tablet': '768px',
+        'laptop': '1024px',
+        'desktop': '1280px',
       },
     },
   },

@@ -1,0 +1,265 @@
+{
+  "LocaleSwitcher": {
+    "title": "ASD",
+    "label": "Engieieiilish",
+    "locale": "English"
+  },
+  "HomeHeader": {
+    "name": "Paulo Vitor",
+    "availableForWorks": "Available for new works.",
+    "description": "Front-end developer & UX/UI design, specializing in creating immersive and intuitive user experiences, consistently pushing the boundaries of design innovation.",
+    "moreAbout": {
+      "p1": "As we talked about, I'm a front-end developer passionate about music and games. In addition to creating amazing interfaces for the web, I also dedicate my free time to producing music and exploring the world of games.",
+      "p2": "I love working on challenging projects and diving into long, engaging texts. My creativity and technical skills allow me to create unique and engaging digital experiences for users. I always seek to improve my skills and stay up to date with the latest trends in the world of web development."
+    },
+    "signature": "Paulo Vitor Pimentel dos Santos",
+    "moreAboutButton": "More about me"
+  },
+  "HomeWorks": {
+    "heading": "Recent works",
+    "subheading": "Explore my recent works, and the ones I'm still working on",
+    "work1": {
+      "title": "Quimplo",
+      "description": "Quimplo is a marketplace website for selling templates."
+    },
+    "work2": {
+      "title": "Paulin",
+      "description": "Paulin is a simple minimal portfolio website."
+    },
+    "work3": {
+      "title": "paulovdev",
+      "description": "paulovdev is a full portfolio website."
+    }
+  },
+  "HomeExperience": {
+    "heading": "Experience",
+    "subheading": "My experiences since I started studying programming",
+    "exp1": {
+      "company": "Anhanguera",
+      "role": "Software Engineer"
+    },
+    "exp2": {
+      "company": "Elevadores Salta",
+      "role": "Electrical Technician"
+    },
+    "exp3": {
+      "company": "Freelance",
+      "role": "Front-end Developer"
+    },
+    "exp4": {
+      "company": "Rocketseat",
+      "role": "Ignite Course"
+    },
+    "bornIn": "Born in 2003"
+  },
+  "HomeStack": {
+    "heading": "Stack",
+    "subheading": "Tools that I always use in almost all of my work",
+    "react": {
+      "title": "React",
+      "subTitle": "JavaScript UI library"
+    },
+    "firebase": {
+      "title": "Firebase",
+      "subTitle": "Google app platform"
+    },
+    "notion": {
+      "title": "Notion",
+      "subTitle": "All-in-one workspace"
+    },
+    "figma": {
+      "title": "Figma",
+      "subTitle": "Design platform"
+    },
+    "vsCode": {
+      "title": "VS Code",
+      "subTitle": "Code editor"
+    },
+    "chatGpt": {
+      "title": "Open AI",
+      "subTitle": "AI-powered language"
+    }
+  },
+  "HomeSetup": {
+    "heading": "Setup",
+    "subheading": "Here you will find the main equipment I use in my setup.",
+    "showMore": "Show more",
+    "category": {
+      "All": "All",
+      "Components": "Components",
+      "Peripherals": "Peripherals",
+      "Network": "Network",
+      "Furniture": "Furniture",
+      "Accessories": "Accessories"
+    },
+    "cpu": "Processor",
+    "cpuDescription": "Intel Core i7-12700K, 3.6GHz, 12-core, 20-threads",
+    "ram": "RAM",
+    "ramDescription": "Team Group T-Force Vulcan Pichau, (2x32GB)",
+    "graphicsCard": "Graphics Card",
+    "graphicsCardDescription": "RX 6600 CLD 8GB ASRock AMD Radeon",
+    "motherboard": "Motherboard",
+    "motherboardDescription": "ASUS Prime H610M-E D4 LGA 1700",
+    "storage": "Storage",
+    "storageDescription": "SSD NVME 2 SSD 480GB XrayDisk",
+    "mouse": "Mouse",
+    "mouseDescription": "Logitech G Pro",
+    "keyboard": "Keyboard",
+    "keyboardDescription": "Logitech G Pro",
+    "monitor": "Monitor",
+    "monitorDescription": "AOC 21.5\" LED Full HD",
+    "case": "Case",
+    "caseDescription": "Pichau HX300 Glass",
+    "headset": "Headset",
+    "headsetDescription": "Havit, 50mm",
+    "lineFilter": "Line Filter",
+    "lineFilterDescription": "DPS Clamper Energy 8 Black, 013000",
+    "gamerCabinet": "Gamer Cabinet",
+    "gamerCabinetDescription": "Pichau HX300 Glass Black, PG-HX3-G01",
+    "coolerProcessor": "Cooler for Processor",
+    "coolerProcessorDescription": "Cooler Master Hyper H410R 92mm Red Led, RR-H410-20PK-R1",
+    "gamerChair": "Gamer Chair",
+    "gamerChairDescription": "TGT Heron TX, Black and Gray, TGT-HRTX-BK01",
+    "speakers": "Speakers",
+    "speakersDescription": "Logitech Z333",
+    "webcam": "Webcam",
+    "webcamDescription": "Logitech C920",
+    "powerSupply": "Power Supply",
+    "powerSupplyDescription": "Corsair CV550, 550W",
+    "extraStorage": "Extra Storage",
+    "extraStorageDescription": "Seagate 2TB External HDD",
+    "router": "Router",
+    "routerDescription": "TP-Link Archer C6",
+    "microphone": "Microphone",
+    "microphoneDescription": "Blue Yeti USB Microphone",
+    "vrHeadset": "VR Headset",
+    "vrHeadsetDescription": "Oculus Rift S",
+    "all": "All",
+    "components": "Components",
+    "peripherals": "Peripherals",
+    "network": "Network",
+    "furniture": "Furniture",
+    "accessories": "Accessories"
+  },
+  "HomeUpdates": {
+    "heading": "Updates",
+    "subheading": "What am I doing at the moment besides studying ;)",
+    "reading": "Reading to:",
+    "readingDescription": "I've got my nose in 'Steal Like an Artist' by Austin Kleon. A book about the process of creativity and the value of harnessing inspiration from various sources. I find myself resonating with the idea that nothing is original and creativity is a remix of our experiences and influences.",
+    "listening": "Listening to:",
+    "listeningDescription": "MGMT's blend of synth-pop, rock, and unconventional lyrics provide a captivating soundtrack to my creative process.",
+    "watching": "Watching to:",
+    "watchingDescription": "The Matrix, a movie that explores reality, technology, and human freedom. It challenges the concept of what is real and what is illusion."
+  },
+  "Works": {
+    "title": "My Works",
+    "description": "Explore my portfolio of projects spanning from 2021 to 2024.",
+    "searchPlaceholder": "Search by title or description...",
+    "noWorksFound": "No works found matching your search criteria.",
+    "items": {
+      "0": {
+        "title": "Quimplo",
+        "description": "Quimplo is a marketplace website for selling templates."
+      },
+      "1": {
+        "title": "Paulin",
+        "description": "Paulin is a simple minimal portfolio website."
+      },
+      "2": {
+        "title": "paulovdev",
+        "description": "paulovdev is a full portfolio website."
+      },
+      "3": {
+        "title": "The Batman",
+        "description": "ShopEase is an e-commerce platform for easy online shopping."
+      },
+      "4": {
+        "title": "Meow Café",
+        "description": "DevPortfolio is a sleek and modern portfolio for developers."
+      },
+      "5": {
+        "title": "Coming soon",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet."
+      },
+      "6": {
+        "title": "Coming soon",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet."
+      },
+      "7": {
+        "title": "Coming soon",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet."
+      },
+      "8": {
+        "title": "Coming soon",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet."
+      },
+      "9": {
+        "title": "Coming soon",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet."
+      }
+    }
+  },
+  "Blog": {
+    "title": "Blog",
+    "description": "Unlocking the secrets of success: Stories, strategies, and motivation.",
+    "articles": {
+      "1": {
+        "title": "The Art of User-Centric Design",
+        "date": "Mar 8, 2024"
+      },
+      "2": {
+        "title": "Maximizing Efficiency with Automation",
+        "date": "Mar 12, 2024"
+      },
+      "3": {
+        "title": "Building a Strong Brand Identity",
+        "date": "Mar 18, 2024"
+      }
+    }
+  },
+  "BlogPost": {
+    "backToBlogs": "Back to Blogs",
+    "content": {
+      "1": {
+        "title": "User-Centric Design",
+        "date": "Mar 8, 2024",
+        "content": [
+          "User-centric design focuses on meeting user needs by prioritizing usability, accessibility, and emotional experience over aesthetics. The process begins with research, such as surveys and usability tests, to gather insights for creating user personas—realistic representations of the target audience.",
+          "With personas, you can map the user journey, identifying friction points and opportunities for improvement. Accessibility is key, ensuring compatibility with screen readers, providing text alternatives for images, and optimizing navigation for different devices.",
+          "The iterative process is essential. After launch, continuous user feedback guides refinements, ensuring the design evolves to meet their needs."
+        ]
+      },
+      "2": {
+        "title": "Maximizing Efficiency",
+        "date": "Mar 12, 2024",
+        "content": [
+          "Automation increases efficiency by reducing time spent on repetitive tasks, allowing more focus on strategic and creative work. In marketing, tools like Mailchimp and HubSpot automate campaigns and personalize content, delivering the right message at the right time with minimal effort.",
+          "Customer support also benefits from automation with chatbots and ticketing systems resolving common issues quickly. Project management tools like Trello and Asana automate task assignments and deadline reminders, helping teams stay organized.",
+          "Personal automation tools like Zapier and IFTTT streamline daily tasks such as email organization and backups. Identifying repetitive tasks and choosing the right tools for automation can maximize efficiency both at work and in personal life."
+        ]
+      },
+      "3": {
+        "title": "Building Brand Identity",
+        "date": "Mar 18, 2024",
+        "content": [
+          "Brand identity is the combination of visual, verbal, and emotional elements that shape how your business is perceived. To build a strong identity, start with a clear purpose—understanding what your brand stands for and how you want customers to feel when interacting with it.",
+          "Visual identity includes your logo, color palette, typography, and imagery. These elements should evoke emotions and build recognition, creating a cohesive and timeless look.",
+          "Your brand voice should align with your visual identity, maintaining consistency across all communication channels, from social media to customer service. Consistency fosters trust with your audience.",
+          "Finally, the user experience plays a crucial role. How customers feel when interacting with your product or service strengthens the emotional connection, fostering brand loyalty and long-term growth."
+        ]
+      }
+    }
+  },
+  "Contact": {
+    "heading": "Get in touch.",
+    "description": "Got an idea for a website or mobile app, or need some tips on product design? Don't hesitate to get in touch. My schedule fills up fast, so the earlier you reach out, the better for both of us.",
+    "email": "E-mail",
+    "call": "Call",
+    "namePlaceholder": "Name",
+    "emailPlaceholder": "E-mail",
+    "messagePlaceholder": "Message",
+    "sendButton": "Send",
+    "responseTime": "Avg. response:",
+    "avgResponse": "24 hours"
+  }
+}
