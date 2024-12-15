@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 
-import { FaLocationDot } from "react-icons/fa6";
 import { GoClockFill } from "react-icons/go";
 import { useLocale } from "next-intl"
 import ThemeChange from './themeChange';

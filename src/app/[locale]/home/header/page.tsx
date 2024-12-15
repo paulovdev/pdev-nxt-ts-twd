@@ -16,7 +16,20 @@ export default function HomeHeader() {
     const [showMoreAbout, setShowMoreAbout] = useState(false);
     const t = useTranslations('HomeHeader');
 
-    const headIcons = [<FaLinkedin />, <FaTwitter />, <FaGithub />]
+    const headIcons = [
+        {
+            id: 1,
+            icon: < FaLinkedin />
+        },
+        {
+            id: 2,
+            icon: <FaTwitter />
+        },
+        {
+            id: 3,
+            icon: <FaGithub />
+        }
+    ]
 
     return (
         <MotionDiv className="relative text-start flex items-start justify-start flex-col max-tablet:text-center max-tablet:items-center max-tablet:justify-center"
@@ -48,9 +61,9 @@ export default function HomeHeader() {
                     </div>
 
                     <div className="mt-4 flex items-center gap-4">
-                        {headIcons.map((icon, i) => (
-                            <div key={i} className="w-[35px] h-[35px] p-2 rounded-full bg-bg2 text-p flex items-center justify-center cursor-pointer transition-all hover:bg-bg3 hover:text-p2">
-                                <span className='text-[16px]'>{icon}</span>
+                        {headIcons.map((icon) => (
+                            <div key={icon.id} className="w-[35px] h-[35px] p-2 rounded-full bg-bg2 text-p flex items-center justify-center cursor-pointer transition-all hover:bg-bg3 hover:text-p2">
+                                <span className='text-[16px]'>{icon.icon}</span>
                             </div>
                         ))}
                     </div>
