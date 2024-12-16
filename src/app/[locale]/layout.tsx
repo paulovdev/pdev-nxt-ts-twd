@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "@/context/ThemeContext";
 import TopNav from "@/components/topNav";
 import Nav from "@/components/nav";
-
+import Lenis from "@/components/lenis";
 
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 
 
 import "./globals.css";
+
 
 export const metadata: Metadata = {
   title: "paulovdev - portfolio",
@@ -32,13 +33,13 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
-
-          <ThemeProvider>
-            <Nav />
-            <TopNav />
-            {children}
-          </ThemeProvider>
-
+          <Lenis>
+            <ThemeProvider>
+              <Nav />
+              <TopNav />
+              {children}
+            </ThemeProvider>
+          </Lenis>
         </NextIntlClientProvider>
       </body>
     </html>

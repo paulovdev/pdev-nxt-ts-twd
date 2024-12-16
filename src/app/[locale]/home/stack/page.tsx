@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { MotionDiv } from '@/components/motion';
 import Image from 'next/image';
+import { RiStackFill } from "react-icons/ri";
 
 
 export default function HomeStack() {
@@ -66,7 +67,7 @@ export default function HomeStack() {
             }}
             viewport={{ once: true }}
         >
-            <h1 className='mb-2 text-p text-[2rem] font-[600] tracking-[-.5px] leading-normal'>{t('heading')}</h1>
+            <h1 className='mb-2 text-p text-[2rem] font-[600] tracking-[-.5px] leading-normal flex items-center gap-2'><RiStackFill size={24}/>{t('heading')}</h1>
             <p className='mb-8 text-p3 text-[1.1rem] font-[500] tracking-[-.5px] leading-[1.2]'>{t('subheading')}</p>
 
             <ul className='w-full grid grid-cols-2 gap-8 

@@ -1,20 +1,13 @@
 'use client';
 
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { usePathname } from "next/navigation";
 
 import { MdHomeFilled, MdWork } from "react-icons/md";
 import { IoJournal } from "react-icons/io5";
 import { FaEnvelope } from "react-icons/fa";
 
-
-interface NavLinks {
-    id: string;
-    icon: React.ReactNode;
-    href: string;
-}
-
-const navLinks: NavLinks[] = [
+const navLinks = [
     { id: "home", icon: <MdHomeFilled />, href: "/" },
     { id: "works", icon: <MdWork />, href: "/works" },
     { id: "blogs", icon: <IoJournal />, href: "/blog" },
@@ -30,9 +23,10 @@ export default function Nav() {
                 <ul className="flex items-center justify-between gap-4
                                max-mobile:gap-2">
                     {navLinks.map((link, index) => {
+                        // Remove o prefixo de idioma da URL
                         const pathWithoutLang = pathname.replace(/^\/(en|pt-br)/, '') || '/';
+                        // Verifica se o caminho extraído corresponde ao href do link
                         const isActive = pathWithoutLang === link.href || pathWithoutLang.startsWith(link.href + '/');
-
                         return (
                             <li key={index}>
                                 <Link

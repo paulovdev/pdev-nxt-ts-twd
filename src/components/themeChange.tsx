@@ -12,7 +12,8 @@ export default function ThemeChange() {
     };
 
     return (
-        <div onClick={handleToggle} className="w-[40px] h-[40px] p-1 rounded-full border border-solid border-border flex items-center justify-center cursor-pointer">
+        <div onClick={handleToggle} className="w-[40px] h-[40px] p-1 rounded-full border border-solid border-border flex items-center justify-center cursor-pointer
+        max-mobile:w-[30px] max-mobile:h-[30px]">
             {theme === "dark" ? <IoMoon className='text-p' /> : <IoSunnySharp className='text-p' />}
         </div>
     );

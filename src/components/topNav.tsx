@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 
+import { FaLocationDot } from "react-icons/fa6";
 import { GoClockFill } from "react-icons/go";
 import { useLocale } from "next-intl"
 import ThemeChange from './themeChange';
@@ -28,20 +29,28 @@ export default function TopNav() {
 
     return (
         <div className='relative max-w-[500px] w-full mt-[10vh] mb-0 mx-auto p-[15px] flex items-center justify-start flex-col 
-        max-tablet:mt-[3vh]'>
+        max-tablet:mt-[3vh] max-mobile:p-[5px]'>
             <div className="relative w-full mb-12">
                 <ul className='p-2 bg-bg2 rounded-full flex items-center justify-between gap-4 select-none'>
                     <li className='flex items-center gap-4'>
-                        <div className="w-[40px] h-[40px] p-1 rounded-full border border-solid border-border flex items-center justify-center">
+                        <div className="w-[40px] h-[40px] p-1 rounded-full border border-solid border-border flex items-center justify-center
+                                        max-mobile:w-[30px] max-mobile:h-[30px]">
+                            <FaLocationDot className='text-[18px] text-p' />
+                        </div>
+                        <p className='text-p text-[.9rem] font-[500] tracking-[-.2px]
+                                     max-mobile:text-[.7rem]'>Brazil</p>
+                        <span>  </span>
+                        <div className="w-[40px] h-[40px] p-1 rounded-full border border-solid border-border flex items-center justify-center
+                        max-mobile:w-[30px] max-mobile:h-[30px]">
                             <GoClockFill className='text-[18px] text-p' />
                         </div>
                         <p className='text-p text-[.9rem] font-[500] tracking-[-.2px] break-keep whitespace-nowrap
-                                      '>{formatTime(time)}</p>
+                                      max-mobile:text-[.7rem]'>{formatTime(time)}</p>
                     </li>
 
                     <li className='flex items-center gap-4'>
-                        <ThemeChange />
                         <LangChange defaultValue={locale} />
+                        <ThemeChange />
                     </li>
                 </ul>
             </div>

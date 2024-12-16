@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { MotionDiv } from '@/components/motion';
 import { GoLinkExternal } from "react-icons/go";
+import { MdOutlineWork } from "react-icons/md";
 import Image from 'next/image';
 
 
@@ -52,9 +53,8 @@ export default function HomeWorks() {
             }}
             viewport={{ once: true }}
         >
-            <h1 className='mb-2 text-p text-[2rem] font-[600] tracking-[-.5px] leading-normal'>{t('heading')}</h1>
+            <h1 className='mb-2 text-p text-[2rem] font-[600] tracking-[-.5px] leading-normal flex items-center gap-2'><MdOutlineWork size={24} />{t('heading')}</h1>
             <p className='mb-8 text-p3 text-[1.1rem] font-[500] tracking-[-.5px] leading-[1.2]'>{t('subheading')}</p>
-
             <div className="w-full flex flex-col gap-8">
                 {works.map(work => (
                     <a href={work.src} key={work.id} target="_blank"

@@ -21,7 +21,7 @@ export default {
         border: "var(--border)",
       },
       screens: {
-        'mobile': '325px',
+        'mobile': '400px',
         'tablet': '768px',
         'laptop': '1024px',
         'desktop': '1280px',

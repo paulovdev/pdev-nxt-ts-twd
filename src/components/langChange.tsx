@@ -30,14 +30,15 @@ export default function LangChange({ defaultValue }: Props) {
 
   return (
     <>
-      <div className="w-[40px] h-[40px] p-1 rounded-full border border-solid border-border flex items-center justify-center cursor-pointer" onClick={() => setThemeToggle(!themeToggle)}>
+      <div className="w-[40px] h-[40px] p-1 rounded-full border border-solid border-border flex items-center justify-center cursor-pointer
+                      max-mobile:w-[30px] max-mobile:h-[30px]" onClick={() => setThemeToggle(!themeToggle)}>
         <IoLanguage className='text-p' />
       </div>
 
       <div className='hidden'>{selectedValue}</div>
 
-      <div className={`absolute w-[100px] top-[65px] right-0 p-2 text-[.9rem] font-[500] rounded-xl bg-bg2 flex items-center flex-col gap-2 opacity-0 transition-all z-50 
-        ${themeToggle ? "opacity-100" : ""}`}>
+      <div className={`absolute w-[100px] top-[65px] right-0 p-2 text-[.9rem] font-[500] rounded-xl bg-bg2 flex items-center flex-col gap-2 opacity-0 transition-all pointer-events-none  z-50 max-mobile:top-[50px]
+        ${themeToggle ? "opacity-100 pointer-events-auto" : ""}`}>
         {routing.locales.map(lang => (
           <div
             key={lang}

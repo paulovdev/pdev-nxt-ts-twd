@@ -4,6 +4,7 @@ import { useState, useRef, useLayoutEffect } from 'react';
 import { IoIosArrowDown } from "react-icons/io";
 import { MotionDiv, MotionButton } from '@/components/motion';
 import { useTranslations } from 'next-intl';
+import { BsFillLaptopFill } from "react-icons/bs";
 
 
 export default function HomeSetup() {
@@ -69,7 +70,7 @@ export default function HomeSetup() {
             viewport={{ once: true }}
         >
             <div className="relative w-full pt-[2.5rem] p-0">
-                <h1 className='mb-2 text-p text-[2rem] font-[600] tracking-[-.5px] leading-normal'>{t('heading')}</h1>
+                <h1 className='mb-2 text-p text-[2rem] font-[600] tracking-[-.5px] leading-normal flex items-center gap-2'><BsFillLaptopFill size={24} />{t('heading')}</h1>
                 <p className='mb-8 text-p3 text-[1.1rem] font-[500] tracking-[-.5px] leading-[1.2]'>{t('subheading')}</p>
             </div>
 
@@ -98,7 +99,7 @@ export default function HomeSetup() {
                     .filter(item => selectedCategory === 'All' || item.category === selectedCategory)
                     .slice(0, visibleItems)
                     .map((item, index) => (
-                        <li key={index} className='w-full h-[90px] mb-4 p-4 bg-bg2 rounded-2xl flex item-start justify-start flex-col transition-all hover:bg-bg2h'>
+                        <li key={index} className='w-full h-[fit] mb-4 p-4 bg-bg2 rounded-2xl flex item-start justify-start flex-col transition-all hover:bg-bg2h'>
                             <strong className='w-full text-p text-[1rem] font-[700] flex items-center justify-between'>{item.title}
                                 <span className='w-fit text-p3 text-[.55rem] font-[700] tracking-[1px] uppercase'>{t(`category.${item.category}`)}</span>
                             </strong>

@@ -13,7 +13,7 @@ interface Key {
 }
 
 export default function HomeHeader() {
-    const [showMoreAbout, setShowMoreAbout] = useState(false);
+    const [showMoreAbout, setShowMoreAbout] = useState(true);
     const t = useTranslations('HomeHeader');
 
     const headIcons = [
@@ -32,13 +32,14 @@ export default function HomeHeader() {
     ]
 
     return (
-        <MotionDiv className="relative text-start flex items-start justify-start flex-col max-tablet:text-center max-tablet:items-center max-tablet:justify-center"
+        <MotionDiv
+            className="relative text-start flex items-start justify-start flex-col max-tablet:text-center max-tablet:items-center max-tablet:justify-center"
             initial={{ opacity: 0, filter: "blur(15px)" }}
             animate={{ opacity: 1, filter: "blur(0px)" }}
             exit={{ opacity: 0, filter: "blur(15px)" }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
         >
-            <div className="w-full mb-12 flex items-center justify-start gap-8 
+            <div className="w-full mb-12 flex items-center justify-start gap-6 
                             max-tablet:mb-6 max-tablet:text-center max-tablet:items-center max-tablet:justify-center max-tablet:flex-col">
                 <div className="w-[125px] h-[125px] rounded-full grayscale-[40%] select-none">
                     <Image src="/photo.webp" width={125} height={125} quality={100} priority={true} alt="profile-photo" />
@@ -88,7 +89,7 @@ export default function HomeHeader() {
                     )}
                 </AnimatePresenceDiv>
 
-                <button onClick={() => setShowMoreAbout(!showMoreAbout)} className="mt-8 mb-4 w-fit py-[.8rem] px-[1.5rem] text-[.9rem] font-[500] rounded-full border border-solid border-transparent bg-bg2 text-p flex items-center gap-2">
+                <button onClick={() => setShowMoreAbout(!showMoreAbout)} className="mt-8 mb-4 w-fit py-[.8rem] px-[1.5rem] text-[.9rem] font-[500] rounded-full bg-bg2 text-p flex items-center gap-2 hover:bg-bg2h">
                     {t('moreAboutButton')} <IoIosArrowUp className={`text-[16px] transition-all ${!showMoreAbout ? "rotate-180" : ""}`} />
                 </button>
             </div>

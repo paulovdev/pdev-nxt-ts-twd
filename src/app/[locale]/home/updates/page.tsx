@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { MotionDiv } from '@/components/motion';
 import { BiBook, BiMusic } from 'react-icons/bi';
 import { MdOutlineMovie } from 'react-icons/md';
+import { GrUpdate } from "react-icons/gr";
 
 
 export default function HomeUpdates() {
@@ -39,7 +40,7 @@ export default function HomeUpdates() {
                 }
             }}
             viewport={{ once: true }}>
-            <h1 className='mb-2 text-p text-[2rem] font-[600] tracking-[-.5px] leading-normal'>{t('heading')}</h1>
+            <h1 className='mb-2 text-p text-[2rem] font-[600] tracking-[-.5px] leading-normal flex items-center gap-2'><GrUpdate size={20} />{t('heading')}</h1>
             <p className='mb-8 text-p3 text-[1.1rem] font-[500] tracking-[-.5px] leading-[1.2]'>{t('subheading')}</p>
 
             <ul className='relative w-full flex items-start flex-col'>
