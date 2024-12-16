@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "@/context/ThemeContext";
 import TopNav from "@/components/topNav";
 import Nav from "@/components/nav";
-import Lenis from "@/components/lenis";
 
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
@@ -33,13 +32,11 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
-          <Lenis>
             <ThemeProvider>
               <Nav />
               <TopNav />
               {children}
             </ThemeProvider>
-          </Lenis>
         </NextIntlClientProvider>
       </body>
     </html>
